@@ -7,10 +7,10 @@
   <meta name="description" content="Instituto Ministerial Naciones. Nos gustaría volver a saber de ti y conocer lo que Dios ha hecho en tu vida.">
   <title>Instituto Naciones | Ex-alumnos</title>
 
-  <!-- Icono de la pestaña: utiliza el logotipo compartido en Google Drive. -->
-  <link rel="icon" type="image/png" href="https://drive.google.com/thumbnail?id=1f3AEEYj8rCPIyDOLVJJGk3WVZdTFYbcN&sz=w128">
-  <link rel="alternate icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="https://drive.google.com/thumbnail?id=1f3AEEYj8rCPIyDOLVJJGk3WVZdTFYbcN&sz=w180">
+  <!-- Iconos locales: el navegador ya no depende de una miniatura de Google Drive. -->
+  <link rel="icon" type="image/png" sizes="512x512" href="icon.png?v=3">
+  <link rel="shortcut icon" href="favicon.ico?v=3">
+  <link rel="apple-touch-icon" href="icon.png?v=3">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
     body{margin:0;color:var(--ink);background:#f1eee5;background-image:radial-gradient(rgba(30,28,24,.055) .65px,transparent .65px);background-size:5px 5px;font-family:var(--sans);-webkit-font-smoothing:antialiased}
     button,input,textarea,select{font:inherit} a{color:inherit}
     .page-shell{width:min(1160px,calc(100% - 36px));margin:28px auto;border:2px solid var(--line);background:var(--paper);box-shadow:0 14px 38px rgba(30,28,24,.08);overflow:hidden}
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px clamp(22px,5vw,60px);border-bottom:2px solid var(--line);min-height:92px}
+    .topbar{display:flex;align-items:center;justify-content:flex-start;gap:20px;padding:22px clamp(22px,5vw,60px);border-bottom:2px solid var(--line);min-height:92px}
     .brand-lockup{display:flex;align-items:center;min-height:46px}
     .brand-logo{display:block;width:auto;max-width:min(270px,62vw);height:54px;object-fit:contain;object-position:left center}
     .brand-fallback{display:none;font-size:12px;font-weight:900;letter-spacing:.12em;line-height:1.25;text-transform:uppercase}
@@ -85,10 +85,10 @@
     .honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
     .closing-band{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;padding:23px clamp(22px,5vw,60px);color:var(--white);background:#17415C}
     .closing-band p{max-width:650px;margin:0;font-family:var(--serif);font-size:clamp(18px,2vw,25px);font-style:italic;line-height:1.2}
-    .closing-logo{display:block;width:auto;max-width:190px;max-height:45px;object-fit:contain}
+    .closing-logo{display:block;width:auto;max-width:190px;max-height:45px;object-fit:contain;mix-blend-mode:screen;background:transparent}
     .closing-fallback{display:none;color:#fff;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
     footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:17px clamp(22px,5vw,60px);color:#79746d;font-size:9px;font-weight:600;line-height:1.6}
-    @media(max-width:760px){.page-shell{width:min(100% - 18px,600px);margin:9px auto}.topbar{padding:17px 19px;min-height:76px}.brand-logo{height:42px}.top-note{max-width:105px;font-size:8px;line-height:1.6}.hero{grid-template-columns:1fr;gap:28px;padding:38px 22px 45px}.poster-wrap{min-height:300px}.poster{width:min(88%,360px);min-height:285px}.poster-title{margin-top:32px;font-size:clamp(35px,10vw,47px)}.poster-script{font-size:25px}.form-section{grid-template-columns:1fr;gap:27px;padding:39px 20px 44px}.form-intro p{max-width:440px}.form-number{margin-top:17px}.form-card{padding:22px 17px}.closing-band{grid-template-columns:1fr;gap:16px}.closing-logo{max-height:36px}footer{padding:15px 20px}}
+    @media(max-width:760px){.page-shell{width:min(100% - 18px,600px);margin:9px auto}.topbar{padding:17px 19px;min-height:76px}.brand-logo{height:42px}.hero{grid-template-columns:1fr;gap:28px;padding:38px 22px 45px}.poster-wrap{min-height:300px}.poster{width:min(88%,360px);min-height:285px}.poster-title{margin-top:32px;font-size:clamp(35px,10vw,47px)}.poster-script{font-size:25px}.form-section{grid-template-columns:1fr;gap:27px;padding:39px 20px 44px}.form-intro p{max-width:440px}.form-number{margin-top:17px}.form-card{padding:22px 17px}.closing-band{grid-template-columns:1fr;gap:16px}.closing-logo{max-height:36px}footer{padding:15px 20px}}
     @media(max-width:430px){.fields-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.submit-button{width:100%}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
@@ -104,7 +104,6 @@
           onerror="logoFallback(this,'brandFallback','https://lh3.googleusercontent.com/d/1Z65-Ptkk4w-16malPU3-x7Mv4lGYfBCJ=w1000')">
         <div class="brand-fallback" id="brandFallback">Instituto Ministerial<span>Naciones</span></div>
       </div>
-      <div class="top-note">Comunidad de exalumnos</div>
     </header>
 
     <section class="hero" aria-labelledby="hero-title">
