@@ -689,7 +689,6 @@
               Autorizo al Instituto Ministerial Naciones a utilizar estos datos para mantener comunicación conmigo
               y dar seguimiento a la comunidad de exalumnos. <span class="required">*</span>
               <a id="privacyLink" href="#" target="_blank" rel="noopener" hidden>Consulta el aviso de privacidad.</a>
-              <span class="field-hint" id="privacyMissingNotice" style="display:block">Aviso de privacidad pendiente de enlazar antes de publicar.</span>
             </label>
           </div>
 
@@ -741,12 +740,6 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    if (PRIVACY_NOTICE_URL.startsWith("https://")) {
-      const privacyLink = document.getElementById("privacyLink");
-      privacyLink.href = PRIVACY_NOTICE_URL;
-      privacyLink.hidden = false;
-      document.getElementById("privacyMissingNotice").hidden = true;
-    }
 
     const query = new URLSearchParams(window.location.search);
 
