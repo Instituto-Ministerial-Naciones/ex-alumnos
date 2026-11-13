@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -26,6 +27,7 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       color: var(--ink);
@@ -35,6 +37,7 @@
       font-family: var(--sans);
       -webkit-font-smoothing: antialiased;
     }
+
     button, input, textarea, select { font: inherit; }
     a { color: inherit; }
 
@@ -46,6 +49,7 @@
       box-shadow: 0 14px 38px rgba(30, 28, 24, .08);
       overflow: hidden;
     }
+
     .topbar {
       display: flex;
       align-items: center;
@@ -54,6 +58,7 @@
       padding: 22px clamp(22px, 5vw, 60px);
       border-bottom: 2px solid var(--line);
     }
+
     .brand-logo {
       display: block;
       width: auto;
@@ -62,6 +67,7 @@
       object-fit: contain;
       object-position: left center;
     }
+
     .top-note {
       font-size: 10px;
       font-weight: 800;
@@ -79,6 +85,7 @@
       padding: clamp(34px, 6vw, 74px) clamp(22px, 5vw, 60px) clamp(40px, 6vw, 74px);
       border-bottom: 2px solid var(--line);
     }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -90,12 +97,14 @@
       letter-spacing: .18em;
       text-transform: uppercase;
     }
+
     .eyebrow::before {
       width: 27px;
       height: 3px;
       content: "";
       background: var(--gold);
     }
+
     h1 {
       max-width: 640px;
       margin: 0;
@@ -104,6 +113,7 @@
       letter-spacing: -.065em;
       font-weight: 800;
     }
+
     h1 em {
       display: block;
       margin-top: 9px;
@@ -114,6 +124,7 @@
       font-weight: 400;
       letter-spacing: -.035em;
     }
+
     .hero-copy {
       max-width: 540px;
       margin: 24px 0 0;
@@ -122,7 +133,9 @@
       font-weight: 400;
       line-height: 1.85;
     }
+
     .hero-copy strong { color: var(--ink); font-weight: 700; }
+
     .hero-links {
       display: flex;
       flex-wrap: wrap;
@@ -130,6 +143,7 @@
       gap: 16px;
       margin-top: 28px;
     }
+
     .text-link {
       display: inline-flex;
       align-items: center;
@@ -140,10 +154,17 @@
       text-decoration: none;
       text-transform: uppercase;
     }
+
     .text-link .arrow { font-size: 17px; transition: transform .2s ease; }
     .text-link:hover .arrow { transform: translateX(4px); }
 
-    .poster-wrap { position: relative; min-height: 380px; display: grid; place-items: center; }
+    .poster-wrap {
+      position: relative;
+      min-height: 380px;
+      display: grid;
+      place-items: center;
+    }
+
     .poster {
       position: relative;
       width: min(100%, 390px);
@@ -155,6 +176,7 @@
       transform: rotate(2deg);
       isolation: isolate;
     }
+
     .poster::before {
       position: absolute;
       z-index: -1;
@@ -166,6 +188,7 @@
       content: "";
       background: var(--gold);
     }
+
     .poster::after {
       position: absolute;
       z-index: -1;
@@ -177,6 +200,7 @@
       border-radius: 50%;
       content: "";
     }
+
     .poster-kicker {
       display: flex;
       justify-content: space-between;
@@ -185,6 +209,7 @@
       letter-spacing: .16em;
       text-transform: uppercase;
     }
+
     .poster-title {
       max-width: 290px;
       margin: 44px 0 0;
@@ -194,7 +219,9 @@
       letter-spacing: -.07em;
       text-transform: uppercase;
     }
+
     .poster-title span { display: block; color: var(--white); }
+
     .poster-script {
       position: absolute;
       right: 28px;
@@ -207,6 +234,7 @@
       text-align: right;
       transform: rotate(-5deg);
     }
+
     .poster-stripe {
       position: absolute;
       right: 32px;
@@ -216,6 +244,7 @@
       background: var(--gold);
       transform: rotate(-7deg);
     }
+
     .poster-index {
       position: absolute;
       bottom: 20px;
@@ -224,6 +253,7 @@
       font-weight: 800;
       letter-spacing: .18em;
     }
+
     .sunburst {
       position: absolute;
       top: 2px;
@@ -243,7 +273,9 @@
       gap: clamp(28px, 5vw, 64px);
       padding: clamp(38px, 6vw, 72px) clamp(22px, 5vw, 60px);
     }
+
     .form-intro { position: relative; padding-top: 6px; }
+
     .form-intro h2 {
       margin: 0;
       font-size: clamp(28px, 3.6vw, 43px);
@@ -251,6 +283,7 @@
       letter-spacing: -.055em;
       font-weight: 800;
     }
+
     .form-intro h2 em {
       display: block;
       margin-top: 5px;
@@ -259,6 +292,7 @@
       font-weight: 400;
       letter-spacing: -.03em;
     }
+
     .form-intro p {
       max-width: 310px;
       margin: 18px 0 0;
@@ -266,6 +300,7 @@
       font-size: 13px;
       line-height: 1.8;
     }
+
     .form-number {
       display: inline-block;
       margin-top: 34px;
@@ -277,17 +312,30 @@
       text-transform: uppercase;
       transform: rotate(-2deg);
     }
+
     .form-card {
       padding: clamp(22px, 3.3vw, 38px);
       border: 1.5px solid var(--line);
       background: #fffefa;
       box-shadow: 6px 7px 0 rgba(17, 19, 17, .09);
     }
-    .form-heading { margin: 0 0 6px; font-size: 19px; font-weight: 800; letter-spacing: -.035em; }
-    .form-subheading { margin: 0 0 25px; color: var(--gray); font-size: 12px; line-height: 1.65; }
-    .fields-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px 15px; }
+
+    .form-heading {
+      margin: 0 0 6px;
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -.035em;
+    }
+
+    .fields-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 17px 15px;
+    }
+
     .field { min-width: 0; }
     .field.full { grid-column: 1 / -1; }
+
     .field label {
       display: block;
       margin: 0 0 8px;
@@ -296,7 +344,9 @@
       letter-spacing: .075em;
       text-transform: uppercase;
     }
+
     .required { color: #ad6800; }
+
     .field input, .field textarea, .field select {
       width: 100%;
       min-height: 48px;
@@ -310,15 +360,52 @@
       font-weight: 500;
       transition: border-color .18s ease, box-shadow .18s ease;
     }
+
     .field textarea { min-height: 132px; resize: vertical; line-height: 1.65; }
-    .field input::placeholder, .field textarea::placeholder { color: #aaa69d; font-weight: 400; }
-    .field input:focus, .field textarea:focus, .field select:focus { border-color: #17415C; box-shadow: 0 0 0 3px rgba(82, 184, 248, .2); }
-    .field-hint { margin: 7px 0 0; color: #858078; font-size: 10px; line-height: 1.5; }
-    .consent-row { display: flex; align-items: flex-start; gap: 10px; margin: 22px 0 0; }
-    .consent-row input { width: 16px; height: 16px; flex: 0 0 16px; margin: 2px 0 0; accent-color: #17415C; }
+
+    .field input::placeholder, .field textarea::placeholder {
+      color: #aaa69d;
+      font-weight: 400;
+    }
+
+    .field input:focus, .field textarea:focus, .field select:focus {
+      border-color: #17415C;
+      box-shadow: 0 0 0 3px rgba(82, 184, 248, .2);
+    }
+
+    .field-hint {
+      margin: 7px 0 0;
+      color: #858078;
+      font-size: 10px;
+      line-height: 1.5;
+    }
+
+    .consent-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 22px 0 0;
+    }
+
+    .consent-row input {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 16px;
+      margin: 2px 0 0;
+      accent-color: #17415C;
+    }
+
     .consent-row label { color: #625e58; font-size: 10px; line-height: 1.65; }
     .consent-row a { font-weight: 800; text-decoration-thickness: 1px; text-underline-offset: 2px; }
-    .submit-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 24px; }
+
+    .submit-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
     .submit-button {
       display: inline-flex;
       justify-content: center;
@@ -337,10 +424,16 @@
       text-transform: uppercase;
       transition: transform .18s ease, background .18s ease, color .18s ease;
     }
-    .submit-button:hover:not(:disabled) { color: var(--ink); background: var(--gold); transform: translate(-2px, -2px); }
+
+    .submit-button:hover:not(:disabled) {
+      color: var(--ink);
+      background: var(--gold);
+      transform: translate(-2px, -2px);
+    }
+
     .submit-button:disabled { cursor: wait; opacity: .7; }
     .submit-button .arrow { font-size: 18px; line-height: 0; }
-    .submit-note { max-width: 200px; color: #8a857c; font-size: 9px; line-height: 1.55; }
+
     .status {
       display: none;
       margin-top: 18px;
@@ -351,12 +444,26 @@
       font-size: 12px;
       line-height: 1.6;
     }
+
     .status.show { display: block; }
-    .status.error { border-left-color: #bd7c16; background: #fff7e4; color: #634512; }
+
+    .status.error {
+      border-left-color: #bd7c16;
+      background: #fff7e4;
+      color: #634512;
+    }
+
     .success-actions { display: none; margin-top: 12px; }
     .success-actions.show { display: block; }
     .success-actions a { font-size: 11px; font-weight: 800; text-underline-offset: 3px; }
-    .honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+
+    .honeypot {
+      position: absolute !important;
+      left: -10000px !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+    }
 
     .closing-band {
       display: grid;
@@ -367,8 +474,24 @@
       color: var(--white);
       background: #17415C;
     }
-    .closing-band p { max-width: 650px; margin: 0; font-family: var(--serif); font-size: clamp(18px, 2vw, 25px); font-style: italic; line-height: 1.2; }
-    .closing-band img { display: block; width: auto; max-width: 170px; max-height: 38px; object-fit: contain; }
+
+    .closing-band p {
+      max-width: 650px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(18px, 2vw, 25px);
+      font-style: italic;
+      line-height: 1.2;
+    }
+
+    .closing-band img {
+      display: block;
+      width: auto;
+      max-width: 170px;
+      max-height: 38px;
+      object-fit: contain;
+    }
+
     footer {
       display: flex;
       flex-wrap: wrap;
@@ -399,25 +522,31 @@
       .closing-band img { max-height: 31px; }
       footer { padding: 15px 20px; }
     }
+
     @media (max-width: 430px) {
       .fields-grid { grid-template-columns: 1fr; }
       .field.full { grid-column: auto; }
       .submit-button { width: 100%; }
-      .submit-note { max-width: none; }
     }
+
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
     }
   </style>
 </head>
+
 <body>
   <main class="page-shell">
     <header class="topbar">
-      <img class="brand-logo"
-           src="https://drive.google.com/uc?export=view&id=1Z65-Ptkk4w-16malPU3-x7Mv4lGYfBCJ"
-           alt="Instituto Ministerial Naciones"
-           onerror="this.style.display='none'">
-
+      <img
+        class="brand-logo"
+        src="https://drive.google.com/uc?export=view&id=1f3AEEYj8rCPIyDOLVJJGk3WVZdTFYbcN"
+        alt="Instituto Ministerial Naciones"
+        onerror="this.style.display='none'"
+      >
     </header>
 
     <section class="hero" aria-labelledby="hero-title">
@@ -465,6 +594,7 @@
             <label for="website">No llenes este campo</label>
             <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
           </div>
+
           <input type="hidden" name="utm_source" id="utm_source" value="instagram">
           <input type="hidden" name="utm_medium" id="utm_medium" value="hook">
           <input type="hidden" name="utm_campaign" id="utm_campaign" value="exalumnos_imn">
@@ -474,22 +604,27 @@
               <label for="nombre">Nombre <span class="required">*</span></label>
               <input id="nombre" name="nombre" type="text" autocomplete="given-name" maxlength="80" placeholder="Tu nombre" required>
             </div>
+
             <div class="field">
               <label for="apellidoPaterno">Apellido paterno <span class="required">*</span></label>
               <input id="apellidoPaterno" name="apellidoPaterno" type="text" autocomplete="family-name" maxlength="80" placeholder="Apellido paterno" required>
             </div>
+
             <div class="field">
               <label for="apellidoMaterno">Apellido materno <span class="required">*</span></label>
               <input id="apellidoMaterno" name="apellidoMaterno" type="text" maxlength="80" placeholder="Apellido materno" required>
             </div>
+
             <div class="field">
               <label for="telefono">Teléfono / WhatsApp <span class="required">*</span></label>
               <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="25" placeholder="Ej. 222 123 4567" required>
             </div>
+
             <div class="field full">
               <label for="correo">Correo electrónico <span class="required">*</span></label>
               <input id="correo" name="correo" type="email" autocomplete="email" maxlength="140" placeholder="nombre@correo.com" required>
             </div>
+
             <div class="field full">
               <label for="generacion">¿En qué generación estuviste? <span class="required">*</span></label>
               <select id="generacion" name="generacion" required>
@@ -540,6 +675,7 @@
                 <option value="1">Generación 1</option>
               </select>
             </div>
+
             <div class="field full">
               <label for="respuesta">¿Qué fue aquello que marcó tu vida durante tu tiempo en el Instituto? <span class="required">*</span></label>
               <textarea id="respuesta" name="respuesta" minlength="10" maxlength="2000" placeholder="Una enseñanza, una experiencia, una persona o un momento que dejó huella en ti..." required></textarea>
@@ -562,7 +698,9 @@
               <span id="buttonText">Enviar y escuchar el mensaje</span><span class="arrow">→</span>
             </button>
           </div>
+
           <div class="status" id="formStatus" role="status" aria-live="polite"></div>
+
           <div class="success-actions" id="successActions">
             <a href="https://vimeo.com/1192608095/a74090b450?fl=tl&amp;fe=ec" id="vimeoLink" rel="noopener">Ir al mensaje completo ahora →</a>
           </div>
@@ -572,8 +710,11 @@
 
     <section class="closing-band">
       <p>“Lo que Dios comenzó en ti, sigue dando fruto.”</p>
-      <img src="https://drive.google.com/uc?export=view&id=1FrBWL-tdaMYYxz16ZTX6CkcHwx25txhK"
-           alt="Instituto Ministerial Naciones" onerror="this.style.display='none'">
+      <img
+        src="https://drive.google.com/uc?export=view&id=1FrBWL-tdaMYYxz16ZTX6CkcHwx25txhK"
+        alt="Instituto Ministerial Naciones"
+        onerror="this.style.display='none'"
+      >
     </section>
 
     <footer>
@@ -581,23 +722,20 @@
     </footer>
   </main>
 
-  <!-- La respuesta de Apps Script se recibe en este iframe para evitar problemas CORS. -->
   <iframe name="appsScriptFrame" id="appsScriptFrame" title="Envío del formulario" hidden></iframe>
 
   <script>
-    // 1) Después de desplegar Apps Script como aplicación web, pega aquí la URL terminada en /exec.
     const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby6R3SFJz7kP42y3iQQBFuuiZ4bvrwhauK_mA0rGEOE8IoSXe0abIlc89nnjUdnBnE/exec";
     const VIMEO_URL = "https://vimeo.com/1192608095/a74090b450?fl=tl&fe=ec";
-    // Pega aquí la URL pública del aviso de privacidad oficial antes de lanzar la campaña.
     const PRIVACY_NOTICE_URL = "PEGA_AQUI_URL_AVISO_DE_PRIVACIDAD";
     const REDIRECT_DELAY_MS = 1800;
 
     const form = document.getElementById("alumniForm");
-    const frame = document.getElementById("appsScriptFrame");
     const submitButton = document.getElementById("submitButton");
     const buttonText = document.getElementById("buttonText");
     const statusBox = document.getElementById("formStatus");
     const successActions = document.getElementById("successActions");
+
     let responseTimer = null;
     let responseReceived = false;
 
@@ -610,54 +748,75 @@
       document.getElementById("privacyMissingNotice").hidden = true;
     }
 
-    // Conserva la atribución del enlace usado en Instagram.
     const query = new URLSearchParams(window.location.search);
+
     ["utm_source", "utm_medium", "utm_campaign"].forEach((key) => {
       const value = query.get(key);
-      if (value) document.getElementById(key).value = value.slice(0, 120);
+      if (value) {
+        document.getElementById(key).value = value.slice(0, 120);
+      }
     });
 
-    form.addEventListener("submit", (event) => {
+    form.addEventListener("submit", () => {
       if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes("PEGA_AQUI")) {
-        event.preventDefault();
-        showStatus("El formulario todavía no está conectado. Falta pegar la URL de implementación de Apps Script en el archivo index.html.", true);
+        showStatus("El formulario todavía no está conectado. Revisa la URL de Apps Script.", true);
         return;
       }
 
       form.action = APPS_SCRIPT_URL;
       responseReceived = false;
       successActions.classList.remove("show");
+
       showStatus("Enviando tus respuestas…", false);
+
       submitButton.disabled = true;
       buttonText.textContent = "Enviando…";
 
       window.clearTimeout(responseTimer);
+
       responseTimer = window.setTimeout(() => {
         if (!responseReceived) {
           submitButton.disabled = false;
           buttonText.textContent = "Intentar de nuevo";
-          showStatus("No pudimos confirmar el envío. Revisa tu conexión y vuelve a intentarlo. Si ya enviaste el formulario, evita duplicarlo y verifica con el equipo del Instituto.", true);
+
+          showStatus(
+            "No pudimos confirmar el envío. Revisa tu conexión y vuelve a intentarlo. Si ya enviaste el formulario, evita duplicarlo y verifica con el equipo del Instituto.",
+            true
+          );
         }
       }, 25000);
-      // No se cancela el evento: el navegador envía el formulario al iframe oculto.
     });
 
     window.addEventListener("message", (event) => {
-      if (event.source !== frame.contentWindow) return;
+      // No exigimos event.source === frame.contentWindow:
+      // Apps Script puede responder desde un iframe interno de Google.
       if (!event.data || event.data.source !== "imn-exalumnos-form") return;
 
       responseReceived = true;
       window.clearTimeout(responseTimer);
+
       if (event.data.status === "ok") {
-        showStatus("¡Gracias por compartir tu historia! Tus respuestas quedaron registradas. Te llevaremos al mensaje completo en un momento.", false);
+        showStatus(
+          "¡Gracias por compartir tu historia! Tus respuestas quedaron registradas. Te llevaremos al mensaje completo en un momento.",
+          false
+        );
+
         successActions.classList.add("show");
         submitButton.disabled = true;
         buttonText.textContent = "¡Gracias por compartir!";
-        window.setTimeout(() => window.location.replace(VIMEO_URL), REDIRECT_DELAY_MS);
+
+        window.setTimeout(() => {
+          window.location.replace(VIMEO_URL);
+        }, REDIRECT_DELAY_MS);
+
       } else {
         submitButton.disabled = false;
         buttonText.textContent = "Intentar de nuevo";
-        showStatus("No fue posible guardar tus respuestas. Verifica tus datos e inténtalo nuevamente.", true);
+
+        showStatus(
+          "No fue posible guardar tus respuestas. Verifica tus datos e inténtalo nuevamente.",
+          true
+        );
       }
     });
 
